@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> teste js </title>
+        <meta charset="utf-8">
+        <script>
+
+            //alerta
+           // alert(" oi");
+    
+            // ele mostra a frase no corpo do site, ou seja ,escreve no documento 
+           // document.write("oi")
+    
+            // mostra o texto e Data
+            //document.write("hoje é dia:" + Date());
+            
+    
+           function acendeLampada(){
+              // alert("a lapamada acendeu");
+
+              // pega o elemento pelo id, e no src ele muda a imagem 
+               document.getElementById("luz").src= "_javascript/lampada-acesa.jpg";
+           }
+
+             function apagaLampada(){
+                document.getElementById("luz").src= "_javascript/lampada-apagada.jpg";
+             }
+              function quebraLampada(){
+                  document.getElementById("luz").src= "_javascript/lampada-quebrada.jpg";
+              }
+
+            </script>
+
+    </head>
+
+    <body> 
+        <h1>acenda a lampada</h1>
+        <img src="_javascript/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout = "apagaLampada()" onclick = "quebraLampada()" /> <!-- ou o onclick= " "-->
+        
+    </body>
+
+</html>
